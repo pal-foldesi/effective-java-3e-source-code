@@ -1,3 +1,3 @@
-# Effective Java, Third Edition
-![EJ3e Book Cover](https://www.pearsonhighered.com/assets/bigcovers/0/1/3/4/0134685997.jpg)
-## Hot News! Source code finally available on GitHub. Happy Hacking!
+# Effective Java, Third Edition fork
+## I am optimizing package names for readability rather than for best practice compliance.
+I am gradually replacing the code samples with ones of my own.
