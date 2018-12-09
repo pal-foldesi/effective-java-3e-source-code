@@ -1,11 +1,11 @@
-package effectivejava.chapter2.item9.tryfinally;
+package effectivejava.creating_and_destroying_objects.prefer_try_with_resources_to_try_finally.tryfinally;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class TopLine {
-    // try-finally - No longer the best way to close resources! (page 34)
+    // try-finally - No longer the best way to close resources!
     static String firstLineOfFile(String path) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         try {

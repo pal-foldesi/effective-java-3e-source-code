@@ -1,11 +1,11 @@
-package effectivejava.chapter2.item9.tryfinally;
+package effectivejava.creating_and_destroying_objects.prefer_try_with_resources_to_try_finally.tryfinally;
 
 import java.io.*;
 
 public class Copy {
     private static final int BUFFER_SIZE = 8 * 1024;
 
-    // try-finally is ugly when used with more than one resource! (Page 34)
+    // try-finally is ugly when used with more than one resource!
     static void copy(String src, String dst) throws IOException {
         InputStream in = new FileInputStream(src);
         try {

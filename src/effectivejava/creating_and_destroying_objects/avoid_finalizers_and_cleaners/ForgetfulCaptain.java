@@ -1,11 +1,9 @@
-package effectivejava.chapter2.item8;
+package effectivejava.creating_and_destroying_objects.avoid_finalizers_and_cleaners;
 
-import java.util.concurrent.TimeUnit;
-
-// Ill-behaved client of resource with cleaner safety-net (Page 33)
-public class Teenager {
+// Ill-behaved client of resource with cleaner safety-net
+public class ForgetfulCaptain {
     public static void main(String[] args) {
-        new Room(99);
+        new ShipHull(true);
         System.out.println("Peace out");
 
         // Uncomment next line and retest behavior, but note that you MUST NOT depend on this behavior!

@@ -1,7 +1,7 @@
-package effectivejava.chapter2.item7;
+package effectivejava.creating_and_destroying_objects.eliminate_obsolete_object_references;
 import java.util.*;
 
-// Can you spot the "memory leak"?  (Pages 26-27)
+// Can you spot the "memory leak"?
 public class Stack {
     private Object[] elements;
     private int size = 0;
@@ -19,7 +19,12 @@ public class Stack {
     public Object pop() {
         if (size == 0)
             throw new EmptyStackException();
+        //No dereferencing of objects here...
         return elements[--size];
+    }
+
+    public boolean isNotEmpty() {
+        return this.size > 0;
     }
 
     /**
@@ -45,7 +50,8 @@ public class Stack {
         for (String arg : args)
             stack.push(arg);
 
-        while (true)
+        while (stack.isNotEmpty()) {
             System.err.println(stack.pop());
+        }
     }
 }
