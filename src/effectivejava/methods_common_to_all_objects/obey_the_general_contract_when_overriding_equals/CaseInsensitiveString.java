@@ -1,10 +1,10 @@
-package effectivejava.chapter3.item10;
+package effectivejava.methods_common_to_all_objects.obey_the_general_contract_when_overriding_equals;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-// Broken - violates symmetry!  (Page 39)
+// Broken - violates symmetry!
 public final class CaseInsensitiveString {
     private final String s;
 
@@ -22,7 +22,7 @@ public final class CaseInsensitiveString {
         return false;
     }
 
-    // Demonstration of the problem (Page 40)
+    // Demonstration of the problem
     public static void main(String[] args) {
         CaseInsensitiveString cis = new CaseInsensitiveString("Polish");
         String s = "polish";
@@ -33,7 +33,7 @@ public final class CaseInsensitiveString {
         System.out.println(list.contains(s));
     }
 
-//    // Fixed equals method (Page 40)
+//    // Fixed equals method
 //    @Override public boolean equals(Object o) {
 //        return o instanceof CaseInsensitiveString &&
 //                ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);

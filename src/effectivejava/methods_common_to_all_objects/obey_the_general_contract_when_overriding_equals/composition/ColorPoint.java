@@ -1,11 +1,11 @@
-package effectivejava.chapter3.item10.composition;
+package effectivejava.methods_common_to_all_objects.obey_the_general_contract_when_overriding_equals.composition;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
+import obey_the_general_contract_when_overriding_equals.Color;
+import obey_the_general_contract_when_overriding_equals.Point;
 
 import java.util.Objects;
 
-// Adds a value component without violating the equals contract (page 44)
+// Adds a value component without violating the equals contract
 public class ColorPoint {
     private final Point point;
     private final Color color;

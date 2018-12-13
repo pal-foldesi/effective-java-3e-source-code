@@ -1,7 +1,7 @@
-package effectivejava.chapter3.item13;
+package effectivejava.methods_common_to_all_objects.override_clone_judiciously;
 import java.util.Arrays;
 
-// A cloneable version of Stack (Pages 60-61)
+// A cloneable version of Stack
 public class Stack implements Cloneable {
     private Object[] elements;
     private int size = 0;

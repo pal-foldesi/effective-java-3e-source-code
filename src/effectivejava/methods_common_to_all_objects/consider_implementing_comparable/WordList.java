@@ -1,7 +1,7 @@
-package effectivejava.chapter3.item14;
+package effectivejava.methods_common_to_all_objects.consider_implementing_comparable;
 import java.util.*;
 
-// The benefits of implementing Comparable (Page 66)
+// The benefits of implementing Comparable
 public class WordList {
     public static void main(String[] args) {
         Set<String> s = new TreeSet<>();

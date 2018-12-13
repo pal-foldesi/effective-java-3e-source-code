@@ -1,9 +1,9 @@
-package effectivejava.chapter3.item10.inheritance;
+package effectivejava.methods_common_to_all_objects.obey_the_general_contract_when_overriding_equals.inheritance;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
+import obey_the_general_contract_when_overriding_equals.Color;
+import obey_the_general_contract_when_overriding_equals.Point;
 
-// Attempting to add a value component to Point (Page 41)
+// Attempting to add a value component to Point
 public class ColorPoint extends Point {
     private final Color color;
 
@@ -12,14 +12,14 @@ public class ColorPoint extends Point {
         this.color = color;
     }
 
-    // Broken - violates symmetry!  (Page 41)
+    // Broken - violates symmetry!
     @Override public boolean equals(Object o) {
         if (!(o instanceof ColorPoint))
             return false;
         return super.equals(o) && ((ColorPoint) o).color == color;
     }
 
-//    // Broken - violates transitivity! (page 42)
+//    // Broken - violates transitivity!
 //    @Override public boolean equals(Object o) {
 //        if (!(o instanceof Point))
 //            return false;
@@ -33,12 +33,12 @@ public class ColorPoint extends Point {
 //    }
 
     public static void main(String[] args) {
-        // First equals function violates symmetry (Page 42)
+        // First equals function violates symmetry
         Point p = new Point(1, 2);
         ColorPoint cp = new ColorPoint(1, 2, Color.RED);
         System.out.println(p.equals(cp) + " " + cp.equals(p));
 
-        // Second equals function violates transitivity (Page 42)
+        // Second equals function violates transitivity
         ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
         Point p2 = new Point(1, 2);
         ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);

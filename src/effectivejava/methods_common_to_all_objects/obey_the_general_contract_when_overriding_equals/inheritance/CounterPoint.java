@@ -1,9 +1,9 @@
-package effectivejava.chapter3.item10.inheritance;
-import effectivejava.chapter3.item10.Point;
+package effectivejava.methods_common_to_all_objects.obey_the_general_contract_when_overriding_equals.inheritance;
+import obey_the_general_contract_when_overriding_equals.Point;
 
 import java.util.concurrent.atomic.*;
 
-// Trivial subclass of Point - doesn't add a value component (Page 43)
+// Trivial subclass of Point - doesn't add a value component
 public class CounterPoint extends Point {
     private static final AtomicInteger counter =
             new AtomicInteger();

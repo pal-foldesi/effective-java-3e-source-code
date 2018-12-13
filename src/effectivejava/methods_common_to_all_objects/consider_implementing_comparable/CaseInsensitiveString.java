@@ -1,8 +1,10 @@
-package effectivejava.chapter3.item14;
+package effectivejava.methods_common_to_all_objects.consider_implementing_comparable;
 
-import java.util.*;
+import java.util.Objects;
+import java.util.Set;
+import java.util.TreeSet;
 
-// Single-field Comparable with object reference field  (Page 69)
+// Single-field Comparable with object reference field
 public final class CaseInsensitiveString
         implements Comparable<CaseInsensitiveString> {
     private final String s;
@@ -11,7 +13,7 @@ public final class CaseInsensitiveString
         this.s = Objects.requireNonNull(s);
     }
 
-    // Fixed equals method (Page 40)
+    // Fixed equals method
     @Override public boolean equals(Object o) {
         return o instanceof CaseInsensitiveString &&
                 ((CaseInsensitiveString) o).s.equalsIgnoreCase(s);
