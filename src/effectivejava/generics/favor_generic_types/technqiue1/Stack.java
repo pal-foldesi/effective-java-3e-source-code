@@ -1,9 +1,10 @@
-package effectivejava.chapter5.item29.technqiue1;
-import effectivejava.chapter5.item29.EmptyStackException;
+package effectivejava.generics.favor_generic_types.technqiue1;
+
+import effectivejava.generics.favor_generic_types.EmptyStackException;
 
 import java.util.Arrays;
 
-// Generic stack using E[] (Pages 130-3)
+// Generic stack using E[]
 public class Stack<E> {
     private E[] elements;
     private int size = 0;

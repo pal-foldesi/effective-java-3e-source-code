@@ -1,9 +1,9 @@
-package effectivejava.chapter5.item29.technqiue2;
+package effectivejava.generics.favor_generic_types.technqiue2;
 
 import java.util.Arrays;
-import effectivejava.chapter5.item29.EmptyStackException;
+import effectivejava.generics.favor_generic_types.EmptyStackException;
 
-// Generic stack using Object[] (Pages 130-3)
+// Generic stack using Object[]
 public class Stack<E> {
     private Object[] elements;
     private int size = 0;

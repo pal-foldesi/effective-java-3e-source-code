@@ -1,4 +1,4 @@
-package effectivejava.chapter5.item30;
+package effectivejava.generics.favor_generic_methods;
 import java.util.*;
 
 // Using a recursive type bound to express mutual comparability (Pages 137-8)

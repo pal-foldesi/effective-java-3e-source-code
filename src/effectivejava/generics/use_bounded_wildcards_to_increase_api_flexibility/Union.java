@@ -1,7 +1,7 @@
-package effectivejava.chapter5.item31;
+package effectivejava.generics.use_bounded_wildcards_to_increase_api_flexibility;
 import java.util.*;
 
-// Generic union method with wildcard types for enhanced flexibility (Pages 142-3)
+// Generic union method with wildcard types for enhanced flexibility
 public class Union {
     public static <E> Set<E> union(Set<? extends E> s1,
                                    Set<? extends E> s2) {

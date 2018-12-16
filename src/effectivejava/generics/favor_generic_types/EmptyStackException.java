@@ -1,4 +1,4 @@
-package effectivejava.chapter5.item29;
+package effectivejava.generics.favor_generic_types;
 
 public class EmptyStackException extends RuntimeException {
 }

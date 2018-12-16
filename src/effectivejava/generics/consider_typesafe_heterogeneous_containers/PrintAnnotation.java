@@ -1,4 +1,4 @@
-package effectivejava.chapter5.item33;
+package effectivejava.generics.consider_typesafe_heterogeneous_containers;
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 

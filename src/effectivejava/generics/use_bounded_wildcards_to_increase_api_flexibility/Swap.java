@@ -1,7 +1,7 @@
-package effectivejava.chapter5.item31;
+package effectivejava.generics.use_bounded_wildcards_to_increase_api_flexibility;
 import java.util.*;
 
-// Private helper method for wildcard capture (Page 145)
+// Private helper method for wildcard capture
 public class Swap {
     public static void swap(List<?> list, int i, int j) {
         swapHelper(list, i, j);

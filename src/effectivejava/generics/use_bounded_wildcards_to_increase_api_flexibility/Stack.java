@@ -1,7 +1,7 @@
-package effectivejava.chapter5.item31;
+package effectivejava.generics.use_bounded_wildcards_to_increase_api_flexibility;
 import java.util.*;
 
-// Generic stack with bulk methods using wildcard types (Pages 139-41)
+// Generic stack with bulk methods using wildcard types
 public class Stack<E> {
     private E[] elements;
     private int size = 0;

@@ -1,7 +1,7 @@
-package effectivejava.chapter5.item31;
+package effectivejava.generics.use_bounded_wildcards_to_increase_api_flexibility;
 import java.util.*;
 
-// Using a recursive type bound with wildcards (Page 143)
+// Using a recursive type bound with wildcards
 public class RecursiveTypeBound {
     public static <E extends Comparable<? super E>> E max(
         List<? extends E> list) {

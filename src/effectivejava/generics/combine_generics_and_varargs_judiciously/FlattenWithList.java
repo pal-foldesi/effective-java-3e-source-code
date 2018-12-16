@@ -1,4 +1,4 @@
-package effectivejava.chapter5.item32;
+package effectivejava.generics.combine_generics_and_varargs_judiciously;
 
 import java.util.ArrayList;
 import java.util.List;
