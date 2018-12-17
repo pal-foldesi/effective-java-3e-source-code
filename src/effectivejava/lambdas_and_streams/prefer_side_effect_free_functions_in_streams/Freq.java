@@ -1,4 +1,4 @@
-package effectivejava.chapter7.item46;
+package effectivejava.lambdas_and_streams.prefer_side_effect_free_functions_in_streams;
 
 import java.io.File;
 import java.io.FileNotFoundException;

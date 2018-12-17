@@ -1,8 +1,8 @@
-package effectivejava.chapter7.item42;
+package effectivejava.lambdas_and_streams.prefer_lambdas_to_anonymous_classes;
 
 import java.util.function.DoubleBinaryOperator;
 
-// Enum with function object fields & constant-specific behavior (Page 195)
+// Enum with function object fields & constant-specific behavior
 public enum Operation {
     PLUS  ("+", (x, y) -> x + y),
     MINUS ("-", (x, y) -> x - y),
@@ -23,7 +23,6 @@ public enum Operation {
         return op.applyAsDouble(x, y);
     }
 
-    // Main method from Item 34 (Page 163)
     public static void main(String[] args) {
         double x = Double.parseDouble(args[0]);
         double y = Double.parseDouble(args[1]);

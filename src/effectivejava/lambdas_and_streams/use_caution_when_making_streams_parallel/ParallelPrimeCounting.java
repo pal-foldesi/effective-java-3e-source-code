@@ -1,10 +1,10 @@
-package effectivejava.chapter7.item48;
+package effectivejava.lambdas_and_streams.use_caution_when_making_streams_parallel;
 
 import java.math.BigInteger;
 import java.util.stream.LongStream;
 
 public class ParallelPrimeCounting {
-    // Prime-counting stream pipeline - parallel version (Page 225)
+    // Prime-counting stream pipeline - parallel version
     static long pi(long n) {
         return LongStream.rangeClosed(2, n)
                 .parallel()

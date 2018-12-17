@@ -1,9 +1,9 @@
-package effectivejava.chapter7.item47;
+package effectivejava.lambdas_and_streams.prefer_collection_to_stream_as_a_return_type;
 
 import java.util.*;
 
 public class PowerSet {
-    // Returns the power set of an input set as custom collection (Page 218)
+    // Returns the power set of an input set as custom collection
     public static final <E> Collection<Set<E>> of(Set<E> s) {
         List<E> src = new ArrayList<>(s);
         if (src.size() > 30)

@@ -1,6 +1,6 @@
-package effectivejava.chapter7.item45;
+package effectivejava.lambdas_and_streams.use_streams_judiciously;
 
-// Refrain from using streams to process char values (Page 206)
+// Refrain from using streams to process char values
 public class CharStream {
     public static void main(String[] args) {
         // Does not produce the expected result

@@ -1,9 +1,9 @@
-package effectivejava.chapter7.item43;
+package effectivejava.lambdas_and_streams.prefer_method_references_to_lambdas;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-// Frequency table implemented with map.merge, using lambda and method reference (Page 197)
+// Frequency table implemented with map.merge, using lambda and method reference
 public class Freq {
     public static void main(String[] args) {
         Map<String, Integer> frequencyTable = new TreeMap<>();

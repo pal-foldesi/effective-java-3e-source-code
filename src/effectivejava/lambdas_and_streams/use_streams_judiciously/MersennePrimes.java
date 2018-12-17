@@ -1,11 +1,11 @@
-package effectivejava.chapter7.item45;
+package effectivejava.lambdas_and_streams.use_streams_judiciously;
 
 import java.math.BigInteger;
 import java.util.stream.Stream;
 
 import static java.math.BigInteger.*;
 
-// Generating the first twent Mersenne primes using streams (Page 208)
+// Generating the first 20 Mersenne primes using streams
 public class MersennePrimes {
     static Stream<BigInteger> primes() {
         return Stream.iterate(TWO, BigInteger::nextProbablePrime);

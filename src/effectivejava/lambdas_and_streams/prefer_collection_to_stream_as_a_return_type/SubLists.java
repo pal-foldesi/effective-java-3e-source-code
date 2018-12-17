@@ -1,12 +1,12 @@
-package effectivejava.chapter7.item47;
+package effectivejava.lambdas_and_streams.prefer_collection_to_stream_as_a_return_type;
 
 import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-// Two ways to generate a stream of all the sublists of a list (Pages 219-20)
+// Two ways to generate a stream of all the sublists of a list
 public class SubLists {
-    // Returns a stream of all the sublists of its input list (Page 219)
+    // Returns a stream of all the sublists of its input list
     public static <E> Stream<List<E>> of(List<E> list) {
         return Stream.concat(Stream.of(Collections.emptyList()),
                 prefixes(list).flatMap(SubLists::suffixes));
@@ -23,7 +23,7 @@ public class SubLists {
     }
 
 //    // Returns a stream of all the sublists of its input list, excluding the empty list
-//    // This version is derived from the obvious iterative code (Page 220)
+//    // This version is derived from the obvious iterative code
 //    public static <E> Stream<List<E>> of(List<E> list) {
 //        return IntStream.range(0, list.size())
 //                .mapToObj(start ->

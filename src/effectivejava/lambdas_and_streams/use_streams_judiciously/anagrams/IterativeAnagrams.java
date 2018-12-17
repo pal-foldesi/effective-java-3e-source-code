@@ -1,10 +1,10 @@
-package effectivejava.chapter7.item45.anagrams;
+package effectivejava.lambdas_and_streams.use_streams_judiciously.anagrams;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-// Prints all large anagram groups in a dictionary iteratively (Page 204)
+// Prints all large anagram groups in a dictionary iteratively
 public class IterativeAnagrams {
     public static void main(String[] args) throws IOException {
         File dictionary = new File(args[0]);

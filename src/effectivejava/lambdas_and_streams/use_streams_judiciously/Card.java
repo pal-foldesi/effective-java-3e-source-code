@@ -1,11 +1,11 @@
-package effectivejava.chapter7.item45;
+package effectivejava.lambdas_and_streams.use_streams_judiciously;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 import static java.util.stream.Collectors.*;
 
-// Generating the Cartesian product of two lists using iteration and streams (Page 209)
+// Generating the Cartesian product of two lists using iteration and streams
 public class Card {
     public enum Suit { SPADE, HEART, DIAMOND, CLUB }
     public enum Rank { ACE, DEUCE, THREE, FOUR, FIVE, SIX, SEVEN,
