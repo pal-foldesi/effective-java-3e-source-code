@@ -1,10 +1,10 @@
-package effectivejava.chapter8.item55;
+package effectivejava.methods.return_optionals_judiciously;
 
 import java.util.*;
 
-// Using Optional<T> as a return type (Pages 249-251)
+// Using Optional<T> as a return type
 public class Max {
-//    // Returns maximum value in collection - throws exception if empty (Page 249)
+//    // Returns maximum value in collection - throws exception if empty
 //    public static <E extends Comparable<E>> E max(Collection<E> c) {
 //        if (c.isEmpty())
 //            throw new IllegalArgumentException("Empty collection");
@@ -17,7 +17,7 @@ public class Max {
 //        return result;
 //    }
 
-//    // Returns maximum value in collection as an Optional<E> (Page 250)
+//    // Returns maximum value in collection as an Optional<E>
 //    public static <E extends Comparable<E>>
 //    Optional<E> max(Collection<E> c) {
 //        if (c.isEmpty())
@@ -31,7 +31,7 @@ public class Max {
 //        return Optional.of(result);
 //    }
 
-    // Returns max val in collection as Optional<E> - uses stream (Page 250)
+    // Returns max val in collection as Optional<E> - uses stream
     public static <E extends Comparable<E>>
     Optional<E> max(Collection<E> c) {
         return c.stream().max(Comparator.naturalOrder());
@@ -42,7 +42,7 @@ public class Max {
 
         System.out.println(max(words));
 
-        // Using an optional to provide a chosen default value (Page 251)
+        // Using an optional to provide a chosen default value
         String lastWordInLexicon = max(words).orElse("No words...");
         System.out.println(lastWordInLexicon);
     }

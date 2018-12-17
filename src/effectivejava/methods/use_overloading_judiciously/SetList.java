@@ -1,7 +1,7 @@
-package effectivejava.chapter8.item52;
+package effectivejava.methods.use_overloading_judiciously;
 import java.util.*;
 
-// What does this program print? (Page 241)
+// What does this program print?
 public class SetList {
     public static void main(String[] args) {
         Set<Integer> set = new TreeSet<>();

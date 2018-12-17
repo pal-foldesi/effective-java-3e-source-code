@@ -1,10 +1,10 @@
-package effectivejava.chapter8.item53;
+package effectivejava.methods.use_varargs_judiciously;
 
 import java.util.stream.IntStream;
 
-// Sample uses of varargs (Pages 245-6)
+// Sample uses of varargs
 public class Varargs {
-    // Simple use of varargs (Page 245)
+    // Simple use of varargs
     static int sum(int... args) {
         int sum = 0;
         for (int arg : args)
@@ -12,7 +12,7 @@ public class Varargs {
         return sum;
     }
 
-//    // The WRONG way to use varargs to pass one or more arguments! (Page 245)
+//    // The WRONG way to use varargs to pass one or more arguments!
 //    static int min(int... args) {
 //        if (args.length == 0)
 //            throw new IllegalArgumentException("Too few arguments");
@@ -23,7 +23,7 @@ public class Varargs {
 //        return min;
 //    }
 
-    // The right way to use varargs to pass one or more arguments (Page 246)
+    // The right way to use varargs to pass one or more arguments
     static int min(int firstArg, int... remainingArgs) {
         int min = firstArg;
         for (int arg : remainingArgs)

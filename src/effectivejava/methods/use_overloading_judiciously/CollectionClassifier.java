@@ -1,13 +1,19 @@
-package effectivejava.chapter8.item52;
-
-import java.math.BigInteger;
+package effectivejava.methods.use_overloading_judiciously;
 import java.util.*;
+import java.math.*;
 
-// Repaired  static classifier method. (Page 240)
-public class FixedCollectionClassifier {
+// Broken! - What does this program print?
+public class CollectionClassifier {
+    public static String classify(Set<?> s) {
+        return "Set";
+    }
+
+    public static String classify(List<?> lst) {
+        return "List";
+    }
+
     public static String classify(Collection<?> c) {
-        return c instanceof Set  ? "Set" :
-                c instanceof List ? "List" : "Unknown Collection";
+        return "Unknown Collection";
     }
 
     public static void main(String[] args) {

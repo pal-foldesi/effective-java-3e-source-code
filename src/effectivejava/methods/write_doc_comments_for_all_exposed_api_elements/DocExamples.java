@@ -1,13 +1,13 @@
-package effectivejava.chapter8.item56;
+package effectivejava.methods.write_doc_comments_for_all_exposed_api_elements;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 
-// Documentation comment examples (Pages 255-9)
+// Documentation comment examples
 public class DocExamples<E> {
-    // Method comment (Page 255)
+    // Method comment
     /**
      * Returns the element at the specified position in this list.
      *
@@ -25,7 +25,7 @@ public class DocExamples<E> {
         return null;
     }
 
-    // Use of @implSpec to describe self-use patterns & other visible implementation details. (Page 256)
+    // Use of @implSpec to describe self-use patterns & other visible implementation details.
     /**
      * Returns true if this collection is empty.
      *
@@ -37,14 +37,14 @@ public class DocExamples<E> {
         return false;
     }
 
-    // Use of the @literal tag to include HTML and javadoc metacharacters in javadoc comments. (Page 256)
+    // Use of the @literal tag to include HTML and javadoc metacharacters in javadoc comments.
     /**
      * A geometric series converges if {@literal |r| < 1}.
      */
     public void fragment() {
     }
 
-    // Controlling summary description when there is a period in the first "sentence" of doc comment. (Page 257)
+    // Controlling summary description when there is a period in the first "sentence" of doc comment.
     /**
      * A suspect, such as Colonel Mustard or {@literal Mrs. Peacock}.
      */
@@ -53,14 +53,14 @@ public class DocExamples<E> {
     }
 
 
-    // Generating a javadoc index entry in Java 9 and later releases. (Page 258)
+    // Generating a javadoc index entry in Java 9 and later releases.
     /**
      * This method complies with the {@index IEEE 754} standard.
      */
     public void fragment2() {
     }
 
-    // Documenting enum constants (Page 258)
+    // Documenting enum constants
     /**
      * An instrument section of a symphony orchestra.
      */
@@ -78,7 +78,7 @@ public class DocExamples<E> {
         STRING;
     }
 
-    // Documenting an annotation type (Page 259)
+    // Documenting an annotation type
     /**
      * Indicates that the annotated method is a test method that
      * must throw the designated exception to pass.

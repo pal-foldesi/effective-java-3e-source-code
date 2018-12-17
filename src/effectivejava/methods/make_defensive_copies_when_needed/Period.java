@@ -1,7 +1,7 @@
-package effectivejava.chapter8.item50;
+package effectivejava.methods.make_defensive_copies_when_needed;
 import java.util.*;
 
-// Broken "immutable" time period class (Pages 231-3)
+// Broken "immutable" time period class
 public final class Period {
     private final Date start;
     private final Date end;
@@ -31,7 +31,7 @@ public final class Period {
         return start + " - " + end;
     }
 
-//    // Repaired constructor - makes defensive copies of parameters (Page 232)
+//    // Repaired constructor - makes defensive copies of parameters
 //    public Period(Date start, Date end) {
 //        this.start = new Date(start.getTime());
 //        this.end   = new Date(end.getTime());
@@ -41,7 +41,7 @@ public final class Period {
 //                    this.start + " after " + this.end);
 //    }
 //
-//    // Repaired accessors - make defensive copies of internal fields (Page 233)
+//    // Repaired accessors - make defensive copies of internal fields
 //    public Date start() {
 //        return new Date(start.getTime());
 //    }
