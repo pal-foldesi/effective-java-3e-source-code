@@ -1,7 +1,7 @@
-package effectivejava.chapter9.item58;
+package effectivejava.general_programming.prefer_for_each_loops_to_traditional_for_loops;
 import java.util.*;
 
-// Same bug as NestIteration.java (but different symptom)!! - Page 213
+// Same bug as NestIteration.java (but different symptom)!!
 public class DiceRolls {
     enum Face { ONE, TWO, THREE, FOUR, FIVE, SIX }
 

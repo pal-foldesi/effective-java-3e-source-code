@@ -1,4 +1,4 @@
-package effectivejava.chapter9.item58;
+package effectivejava.general_programming.prefer_for_each_loops_to_traditional_for_loops;
 
 import java.util.*;
 

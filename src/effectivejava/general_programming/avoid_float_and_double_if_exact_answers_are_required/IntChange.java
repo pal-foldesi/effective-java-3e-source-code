@@ -1,4 +1,4 @@
-package effectivejava.chapter9.item60;
+package effectivejava.general_programming.avoid_float_and_double_if_exact_answers_are_required;
 
 public class IntChange {
     public static void main(String[] args) {

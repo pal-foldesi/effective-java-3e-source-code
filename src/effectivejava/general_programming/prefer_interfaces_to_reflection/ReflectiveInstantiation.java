@@ -1,11 +1,11 @@
-package effectivejava.chapter9.item65;
+package effectivejava.general_programming.prefer_interfaces_to_reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.Set;
 
-// Reflective instantiaion demo (Page 283)
+// Reflective instantiaion demo
 public class ReflectiveInstantiation {
     // Reflective instantiation with interface access
     public static void main(String[] args) {

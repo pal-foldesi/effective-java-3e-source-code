@@ -1,7 +1,7 @@
-package effectivejava.chapter9.item59;
+package effectivejava.general_programming.know_and_use_the_libraries;
 import java.util.*;
 
-// Random number generation is hard! - Page 215
+// Random number generation is hard!
 public class RandomBug {
     // Common but deeply flawed!
     static Random rnd = new Random();

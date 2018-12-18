@@ -1,14 +1,14 @@
-package effectivejava.chapter9.item61;
+package effectivejava.general_programming.prefer_primitive_types_to_boxed_primitives;
 import java.util.*;
 
-// Broken comparator - can you spot the flaw? - Page 273
+// Broken comparator - can you spot the flaw?
 public class BrokenComparator {
     public static void main(String[] args) {
 
 //        Comparator<Integer> naturalOrder =
 //                (i, j) -> (i < j) ? -1 : (i == j ? 0 : 1);
 
-       // Fixed Comparator - Page 274
+       // Fixed Comparator
         Comparator<Integer> naturalOrder = (iBoxed, jBoxed) -> {
             int i = iBoxed, j = jBoxed; // Auto-unboxing
             return i < j ? -1 : (i == j ? 0 : 1);
