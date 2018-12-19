@@ -1,9 +1,9 @@
-package effectivejava.chapter11.item78.brokenstopthread;
+package effectivejava.concurrency.synchronize_access_to_shared_mutable_data.fixedstopthread2;
 import java.util.concurrent.*;
 
-// Broken! - How long would you expect this program to run?  (Page 312)
+// Cooperative thread termination with a volatile field
 public class StopThread {
-    private static boolean stopRequested;
+    private static volatile boolean stopRequested;
 
     public static void main(String[] args)
             throws InterruptedException {

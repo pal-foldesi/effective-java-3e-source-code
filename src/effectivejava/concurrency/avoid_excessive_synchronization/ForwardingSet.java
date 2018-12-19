@@ -1,7 +1,7 @@
-package effectivejava.chapter11.item79;
+package effectivejava.concurrency.avoid_excessive_synchronization;
 import java.util.*;
 
-// Reusable forwarding class   (Page XXX)
+// Reusable forwarding class
 public class ForwardingSet<E> implements Set<E> {
     private final Set<E> s;
     public ForwardingSet(Set<E> s) { this.s = s; }

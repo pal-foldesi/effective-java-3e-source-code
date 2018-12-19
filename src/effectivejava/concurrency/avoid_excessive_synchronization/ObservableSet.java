@@ -1,4 +1,4 @@
-package effectivejava.chapter11.item79;
+package effectivejava.concurrency.avoid_excessive_synchronization;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 

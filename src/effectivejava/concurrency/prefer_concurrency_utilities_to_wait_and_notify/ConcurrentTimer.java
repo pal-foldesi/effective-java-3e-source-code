@@ -1,7 +1,7 @@
-package effectivejava.chapter11.item81;
+package effectivejava.concurrency.prefer_concurrency_utilities_to_wait_and_notify;
 import java.util.concurrent.*;
 
-// Simple framework for timing concurrent execution 327
+// Simple framework for timing concurrent execution
 public class ConcurrentTimer {
     private ConcurrentTimer() { } // Noninstantiable
 

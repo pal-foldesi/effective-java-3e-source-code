@@ -1,6 +1,6 @@
-package effectivejava.chapter11.item84;
+package effectivejava.concurrency.do_not_depend_on_the_thread_scheduler;
 
-// Awful CountDownLatch implementation - busy-waits incessantly!  - Pages 336-7
+// Awful CountDownLatch implementation - busy-waits incessantly!
 public class SlowCountDownLatch {
     private int count;
 

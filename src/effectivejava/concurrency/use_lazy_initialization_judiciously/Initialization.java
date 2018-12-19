@@ -1,12 +1,12 @@
-package effectivejava.chapter11.item83;
+package effectivejava.concurrency.use_lazy_initialization_judiciously;
 
-// Initialization styles - Pages 333-
+// Initialization styles
 public class Initialization {
 
-    // Normal initialization of an instance field4 - Page 282
+    // Normal initialization of an instance field
     private final FieldType field1 = computeFieldValue();
 
-    // Lazy initialization of instance field4 - synchronized accessor - Page 333
+    // Lazy initialization of instance field4 - synchronized accessor
     private FieldType field2;
     private synchronized FieldType getField2() {
         if (field2 == null)
@@ -14,7 +14,7 @@ public class Initialization {
         return field2;
     }
 
-    // Lazy initialization holder class idiom for static fields - Page 334
+    // Lazy initialization holder class idiom for static fields
     private static class FieldHolder {
         static final FieldType field = computeFieldValue();
     }
@@ -22,7 +22,7 @@ public class Initialization {
     private static FieldType getField() { return FieldHolder.field; }
 
 
-    // Double-check idiom for lazy initialization of instance fields - Page 334
+    // Double-check idiom for lazy initialization of instance fields
     private volatile FieldType field4;
 
     private FieldType getField4() {
@@ -38,7 +38,7 @@ public class Initialization {
     }
 
 
-    // Single-check idiom - can cause repeated initialization! - Page 334
+    // Single-check idiom - can cause repeated initialization!
     private volatile FieldType field5;
 
     private FieldType getField5() {

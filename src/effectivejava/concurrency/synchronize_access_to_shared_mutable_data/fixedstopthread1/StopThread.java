@@ -1,4 +1,4 @@
-package effectivejava.chapter11.item78.fixedstopthread1;
+package effectivejava.concurrency.synchronize_access_to_shared_mutable_data.fixedstopthread1;
 import java.util.concurrent.*;
 
 // Properly synchronized cooperative thread termination

@@ -1,10 +1,10 @@
-package effectivejava.chapter11.item79;
+package effectivejava.concurrency.avoid_excessive_synchronization;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-// Simple test of ObservableSet - Page 319
+// Simple test of ObservableSet
 public class Test3 {
     public static void main(String[] args) {
         ObservableSet<Integer> set =
