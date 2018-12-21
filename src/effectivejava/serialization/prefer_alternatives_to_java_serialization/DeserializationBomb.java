@@ -1,10 +1,10 @@
-package effectivejava.chapter12.item85;
-import static effectivejava.chapter12.Util.*;
+package effectivejava.serialization.prefer_alternatives_to_java_serialization;
+import static effectivejava.serialization.Util.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
-// Deserialization bomb - deserializing this stream takes forever - Page 340
+// Deserialization bomb - deserializing this stream takes forever
 public class DeserializationBomb {
     public static void main(String[] args) throws Exception {
         System.out.println(bomb().length);

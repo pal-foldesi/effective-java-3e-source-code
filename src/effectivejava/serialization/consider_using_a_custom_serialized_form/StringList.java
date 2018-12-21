@@ -1,7 +1,7 @@
-package effectivejava.chapter12.item87;
+package effectivejava.serialization.consider_using_a_custom_serialized_form;
 import java.io.*;
 
-// StringList with a reasonable custom serialized form  - Page 349
+// StringList with a reasonable custom serialized form
 public final class StringList implements Serializable {
     private transient int size   = 0;
     private transient Entry head = null;

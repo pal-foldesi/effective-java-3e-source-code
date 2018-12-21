@@ -1,6 +1,6 @@
-package effectivejava.chapter12.item90;
+package effectivejava.serialization.consider_serialization_proxies_instead_of_serialized_instances;
 
-// Period class with serialization proxy - Pages 363-364
+// Period class with serialization proxy
 
 import java.util.*;
 import java.io.*;

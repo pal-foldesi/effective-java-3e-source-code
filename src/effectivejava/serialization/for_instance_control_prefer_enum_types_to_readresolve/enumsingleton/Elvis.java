@@ -1,8 +1,8 @@
-package effectivejava.chapter12.item89.enumsingleton;
+package effectivejava.serialization.for_instance_control_prefer_enum_types_to_readresolve.enumsingleton;
 
 import java.util.*;
 
-// Enum singleton - the preferred approach - Page 311
+// Enum singleton - the preferred approach
 public enum Elvis {
     INSTANCE;
     private String[] favoriteSongs =

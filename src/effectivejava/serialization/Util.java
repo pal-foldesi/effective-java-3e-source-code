@@ -1,4 +1,4 @@
-package effectivejava.chapter12;
+package effectivejava.serialization;
 
 import java.io.*;
 
