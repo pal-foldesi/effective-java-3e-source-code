@@ -2,9 +2,9 @@ package effectivejava.classes_and_interfaces.in_public_classes_use_accessor_meth
 
 // Public class with exposed immutable fields - questionable
 public class Rectanguloid {
-    public int width;
-    public int height;
-    public int length;
+    public final int width;
+    public final int height;
+    public final int length;
 
     public Rectanguloid(int width, int height, int length) {
         if (width <= 0 || height <= 0 || length <= 0) {
